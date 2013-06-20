@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.carbonculture.net/number10/10-downing-street
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.7
+      Date:
+      - Thu, 20 Jun 2013 16:15:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Vary:
+      - Authorization, Host
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Api-Version:
+      - v1
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST,GET,OPTIONS
+    body:
+      encoding: US-ASCII
+      string: ! "{\n    \"status\": \"ok\", \n    \"operational_rating\": [\n        {\n
+        \           \"end_date\": \"2011-06-27\", \n            \"start_date\": \"2010-06-28\",
+        \n            \"value\": 87\n        }, \n        {\n            \"end_date\":
+        \"2012-06-27\", \n            \"start_date\": \"2011-06-28\", \n            \"value\":
+        83\n        }, \n        {\n            \"end_date\": \"2013-06-27\", \n            \"start_date\":
+        \"2012-06-28\", \n            \"value\": 82\n        }\n    ], \n    \"title\":
+        \"10 Downing Street\", \n    \"link_url\": \"http://www.carbonculture.net/orgs/number10/10-downing-street/\",
+        \n    \"namespace\": \"number10.10-downing-street\", \n    \"channels\": [\n
+        \       \"heat\", \n        \"elec\", \n        \"gas\"\n    ], \n    \"place\":
+        \"10-downing-street\", \n    \"image_url\": \"http://www.carbonculture.net/uploads/places/images/no10external_carbonculture_260.png\",
+        \n    \"building_stats\": {}\n}"
+    http_version: 
+  recorded_at: Thu, 20 Jun 2013 16:15:15 GMT
+- request:
+    method: get
+    uri: http://data.carbonculture.net/unknown/somewhere
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.7
+      Date:
+      - Thu, 20 Jun 2013 16:15:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Vary:
+      - Authorization, Host
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Api-Version:
+      - v1
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST,GET,OPTIONS
+    body:
+      encoding: US-ASCII
+      string: ! "{\n    \"status\": \"fail\"\n}"
+    http_version: 
+  recorded_at: Thu, 20 Jun 2013 16:15:15 GMT
+recorded_with: VCR 2.5.0
