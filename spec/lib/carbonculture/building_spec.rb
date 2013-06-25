@@ -12,12 +12,12 @@ describe Carbonculture::Building do
 
   describe 'initialize class' do
 
-    it 'must contain accept valid Organisation' do
+    it 'must contain accept valid Building' do
       org = Carbonculture::Building.new('10-downing-street', 'number10')
       org.data.response.code.must_equal '200'
     end
 
-    it 'must raise an error with an invalid Organisation' do
+    it 'must raise an error with an invalid Building' do
       proc { Carbonculture::Building.new('somewhere', 'unknown') }.must_raise ArgumentError
     end
 
