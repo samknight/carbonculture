@@ -8,7 +8,6 @@ module Carbonculture
       self.place_name = place_name
       self.organisation_name = organisation_name
       self.data = self.class.get "#{ BASE_URL }/#{ organisation_name }/#{ place_name }/#{ name }"
-      puts "#{ BASE_URL }/#{ organisation_name }/#{ place_name }/#{ name }"
 
       begin
         self.body = JSON.parse(self.data.body)
@@ -16,6 +15,10 @@ module Carbonculture
         raise ArgumentError
       end
 
+    end
+
+    def place
+      Place.new(place_name, organisation_name)
     end
 
     def method_missing(method_name, *args, &block)

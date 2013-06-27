@@ -28,6 +28,20 @@ describe Carbonculture::Channel do
 
   end
 
+  describe 'Place association' do
+
+    it 'returns a Place' do
+      channel = Carbonculture::Channel.new('elec', '10-downing-street', 'number10')
+      channel.place.must_be_kind_of Carbonculture::Place
+    end
+
+    it 'returns the correct Place' do
+      channel = Carbonculture::Channel.new('elec', '10-downing-street', 'number10')
+      channel.place.name.must_equal '10-downing-street'
+    end
+
+  end
+
   describe 'dynamic attributes' do
 
     it 'returns the attribute value if present in the profile' do
