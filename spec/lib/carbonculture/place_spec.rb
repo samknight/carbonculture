@@ -56,4 +56,18 @@ describe Carbonculture::Place do
 
   end
 
+  describe 'Channels association' do
+
+    it 'returns an Array' do
+      place = Carbonculture::Place.new('10-downing-street', 'number10')
+      place.channels.must_be_kind_of Array
+    end
+
+    it 'returns an Array of Places' do
+      place = Carbonculture::Place.new('10-downing-street', 'number10')
+      place.channels.first.must_be_kind_of Carbonculture::Channel
+    end
+
+  end
+
 end

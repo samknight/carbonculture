@@ -17,6 +17,10 @@ module Carbonculture
       Organisation.new(organisation_name)
     end
 
+    def channels
+      body['channels'].map { |c| Channel.new(c, name, organisation_name) }
+    end
+
     def method_missing(method_name, *args, &block)
       if body.has_key?(method_name.to_s)
         body[method_name.to_s]
