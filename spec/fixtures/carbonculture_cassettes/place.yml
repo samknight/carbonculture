@@ -88,4 +88,46 @@ http_interactions:
       string: ! "{\n    \"status\": \"fail\"\n}"
     http_version: 
   recorded_at: Thu, 20 Jun 2013 16:15:15 GMT
+- request:
+    method: get
+    uri: http://data.carbonculture.net/number10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.7
+      Date:
+      - Thu, 27 Jun 2013 09:59:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Authorization, Host
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Api-Version:
+      - v1
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST,GET,OPTIONS
+    body:
+      encoding: US-ASCII
+      string: ! "{\n    \"status\": \"ok\", \n    \"organisation\": \"number10\",
+        \n    \"places\": [\n        \"10-downing-street\"\n    ], \n    \"title\":
+        \"Number 10\"\n}"
+    http_version: 
+  recorded_at: Thu, 27 Jun 2013 09:59:13 GMT
 recorded_with: VCR 2.5.0
