@@ -41,4 +41,19 @@ describe Carbonculture::Organisation do
     end
 
   end
+
+  describe 'Places association' do
+
+    it 'returns an Array' do
+      org = Carbonculture::Organisation.new('number10')
+      org.places.must_be_kind_of Array
+    end
+
+    it 'returns an Array of Places' do
+      org = Carbonculture::Organisation.new('number10')
+      org.places.first.must_be_kind_of Carbonculture::Place
+    end
+
+  end
+
 end
