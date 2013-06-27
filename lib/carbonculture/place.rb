@@ -1,5 +1,5 @@
 module Carbonculture
-  class Building
+  class Place
     include HTTParty
     attr_accessor :name, :data, :body
 
