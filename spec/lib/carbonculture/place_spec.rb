@@ -49,10 +49,11 @@ describe Carbonculture::Place do
       place.organisation.must_be_kind_of Carbonculture::Organisation
     end
 
-    it 'returns an Array of Places' do
+    it 'returns the correct Organisation' do
       place = Carbonculture::Place.new('10-downing-street', 'number10')
       place.organisation.name.must_equal 'number10'
     end
 
   end
+
 end
