@@ -1,7 +1,7 @@
 module Carbonculture
   class Channel
     include HTTParty
-    attr_accessor :name, :place_name, :organisation_name, :data, :body
+    attr_accessor :name, :place_name, :organisation_name, :data, :body, :results
 
     def initialize(name, place_name, organisation_name)
       self.name = name
@@ -14,6 +14,8 @@ module Carbonculture
       rescue
         raise ArgumentError
       end
+
+      build_results
 
     end
 
@@ -28,5 +30,19 @@ module Carbonculture
         super
       end
     end
+
+    private
+
+    def build_results
+      self.results = []
+      set_start = Time.parse(body['start_time'])
+      set_end = Time.parse(body['end_time'])
+      set_ratio = (set_end - set_start) / body['points'].to_i
+      body['results'].each do |result|
+        self.results << Result.new(set_start, set_start + set_ratio, result.first)
+        set_start = set_start + set_ratio
+      end
+    end
+
   end
 end

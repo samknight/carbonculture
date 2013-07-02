@@ -42,6 +42,19 @@ describe Carbonculture::Channel do
 
   end
 
+  describe '#results' do
+    it 'returns an Array' do
+      channel = Carbonculture::Channel.new('elec', '10-downing-street', 'number10')
+      channel.results.must_be_kind_of Array
+    end
+
+
+    it 'returns an Array of Results' do
+      channel = Carbonculture::Channel.new('elec', '10-downing-street', 'number10')
+      channel.results.first.must_be_kind_of Carbonculture::Result
+    end
+  end
+
   describe 'dynamic attributes' do
 
     it 'returns the attribute value if present in the profile' do
