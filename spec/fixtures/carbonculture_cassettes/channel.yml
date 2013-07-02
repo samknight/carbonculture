@@ -156,4 +156,158 @@ http_interactions:
         \n    \"building_stats\": {}\n}"
     http_version: 
   recorded_at: Thu, 27 Jun 2013 10:39:36 GMT
+- request:
+    method: get
+    uri: http://data.carbonculture.net/number10/10-downing-street/elec?
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.7
+      Date:
+      - Tue, 02 Jul 2013 16:56:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Authorization, Host
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Api-Version:
+      - v1
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST,GET,OPTIONS
+    body:
+      encoding: US-ASCII
+      string: ! "{\n    \"status\": \"ok\", \n    \"fields\": [\n        \"number10.10-downing-street.elec\"\n
+        \   ], \n    \"start_time\": \"2013-07-01T16:30:00\", \n    \"results\": [\n
+        \       [\n            \"75.50\"\n        ], \n        [\n            \"72.89\"\n
+        \       ], \n        [\n            \"71.99\"\n        ], \n        [\n            \"72.37\"\n
+        \       ], \n        [\n            \"70.30\"\n        ], \n        [\n            \"66.59\"\n
+        \       ], \n        [\n            \"63.28\"\n        ], \n        [\n            \"62.36\"\n
+        \       ], \n        [\n            \"60.68\"\n        ], \n        [\n            \"59.41\"\n
+        \       ], \n        [\n            \"65.21\"\n        ], \n        [\n            \"60.99\"\n
+        \       ], \n        [\n            \"56.84\"\n        ], \n        [\n            \"56.25\"\n
+        \       ], \n        [\n            \"55.78\"\n        ], \n        [\n            \"55.73\"\n
+        \       ], \n        [\n            \"55.77\"\n        ], \n        [\n            \"54.35\"\n
+        \       ], \n        [\n            \"56.25\"\n        ], \n        [\n            \"54.22\"\n
+        \       ], \n        [\n            \"53.64\"\n        ], \n        [\n            \"54.98\"\n
+        \       ], \n        [\n            \"54.55\"\n        ], \n        [\n            \"53.62\"\n
+        \       ], \n        [\n            \"55.58\"\n        ], \n        [\n            \"60.07\"\n
+        \       ], \n        [\n            \"75.33\"\n        ], \n        [\n            \"79.11\"\n
+        \       ], \n        [\n            \"85.69\"\n        ], \n        [\n            \"91.82\"\n
+        \       ], \n        [\n            \"90.93\"\n        ], \n        [\n            \"91.63\"\n
+        \       ], \n        [\n            \"91.10\"\n        ], \n        [\n            \"91.66\"\n
+        \       ], \n        [\n            \"95.61\"\n        ], \n        [\n            \"91.94\"\n
+        \       ], \n        [\n            \"92.37\"\n        ], \n        [\n            \"89.87\"\n
+        \       ], \n        [\n            \"91.47\"\n        ], \n        [\n            \"89.40\"\n
+        \       ], \n        [\n            \"89.98\"\n        ], \n        [\n            \"88.74\"\n
+        \       ], \n        [\n            \"90.59\"\n        ], \n        [\n            \"95.25\"\n
+        \       ], \n        [\n            \"96.95\"\n        ], \n        [\n            \"93.33\"\n
+        \       ], \n        [\n            \"93.41\"\n        ], \n        [\n            \"89.97\"\n
+        \       ]\n    ], \n    \"points\": 48, \n    \"end_time\": \"2013-07-02T16:30:00\"\n}"
+    http_version: 
+  recorded_at: Tue, 02 Jul 2013 16:56:11 GMT
+- request:
+    method: get
+    uri: http://data.carbonculture.net/number10/10-downing-street/elec?points=12
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.7
+      Date:
+      - Tue, 02 Jul 2013 16:56:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Authorization, Host
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Api-Version:
+      - v1
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST,GET,OPTIONS
+    body:
+      encoding: US-ASCII
+      string: ! "{\n    \"status\": \"ok\", \n    \"fields\": [\n        \"number10.10-downing-street.elec\"\n
+        \   ], \n    \"start_time\": \"2013-07-01T16:30:00\", \n    \"results\": [\n
+        \       [\n            \"292.71\"\n        ], \n        [\n            \"262.53\"\n
+        \       ], \n        [\n            \"246.31\"\n        ], \n        [\n            \"224.61\"\n
+        \       ], \n        [\n            \"220.64\"\n        ], \n        [\n            \"216.71\"\n
+        \       ], \n        [\n            \"270.12\"\n        ], \n        [\n            \"360.08\"\n
+        \       ], \n        [\n            \"370.28\"\n        ], \n        [\n            \"363.11\"\n
+        \       ], \n        [\n            \"364.57\"\n        ], \n        [\n            \"373.66\"\n
+        \       ]\n    ], \n    \"points\": 12, \n    \"end_time\": \"2013-07-02T16:30:00\"\n}"
+    http_version: 
+  recorded_at: Tue, 02 Jul 2013 16:56:11 GMT
+- request:
+    method: get
+    uri: http://data.carbonculture.net/number10/10-downing-street/fake?
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 404
+      message: NOT FOUND
+    headers:
+      Server:
+      - nginx/1.2.7
+      Date:
+      - Tue, 02 Jul 2013 16:56:13 GMT
+      Content-Type:
+      - text/plain
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Authorization, Host
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Api-Version:
+      - v1
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST,GET,OPTIONS
+    body:
+      encoding: US-ASCII
+      string: ! 'Not Found: Unknown channels: number10.10-downing-street.fake'
+    http_version: 
+  recorded_at: Tue, 02 Jul 2013 16:56:11 GMT
 recorded_with: VCR 2.5.0

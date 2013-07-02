@@ -26,6 +26,10 @@ describe Carbonculture::Channel do
       channel.data.must_be_instance_of Hash
     end
 
+    it 'must accept points options' do
+      channel = Carbonculture::Channel.new('elec', '10-downing-street', 'number10', { :points => 12 })
+      channel.results.size.must_equal 12
+    end
   end
 
   describe 'Place association' do
