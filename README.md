@@ -1,6 +1,6 @@
 # Carbonculture
 
-TODO: Write a gem description
+Reads the utility usage of various public buildings including Number 10 Downing Street
 
 ## Installation
 
@@ -18,7 +18,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You can find building from organisations or call it directly.
+
+    Carbonculture::Organisation('number10').places
+    
+or
+
+    Carbonculture::Place('10-downing-street', 'number10')
+    
+Channels for different types of utility (electric, gas, etc)
+
+    Carbonculture::Place('10-downing-street', 'number10').channels
+    
+More information on methods and results available can be discovered at http://data.carbonculture.net/
 
 ## Contributing
 
