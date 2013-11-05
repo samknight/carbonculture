@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Carbonculture::VERSION
   spec.authors       = ["Sam Knight"]
   spec.email         = ["sam@samknight.co.uk"]
-  spec.description   = %q{TODO: Write a gem description}
+  spec.description   = "Ruby library to gather energy data from CarbonCulture"
   spec.summary       = "Ruby library to gather energy data from CarbonCulture"
   spec.homepage      = ""
   spec.license       = "MIT"
