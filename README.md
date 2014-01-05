@@ -20,17 +20,26 @@ Or install it yourself as:
 
 You can find building from organisations or call it directly.
 
-    Carbonculture::Organisation('number10').places
+    org = Carbonculture::Organisation.new('number10')
+    org.places
     
 or
 
-    Carbonculture::Place('10-downing-street', 'number10')
+    Carbonculture::Place.new('10-downing-street', 'number10')
     
 Channels for different types of utility (electric, gas, etc)
 
-    Carbonculture::Place('10-downing-street', 'number10').channels
+    Carbonculture::Place.new('10-downing-street', 'number10').channels
     
-More information on methods and results available can be discovered at http://data.carbonculture.net/
+The above example will list all available channels. Below you can target specific type of energy.
+
+    Carbonculture::Channel.new('heat', '10-downing-street', 'number10')
+    
+Options can be passed in as a Hash.
+
+    Carbonculture::Channel.new('heat', '10-downing-street', 'number10', { 'start-time' => '2013-10-01' })
+
+More information on options, methods and results available can be discovered at http://data.carbonculture.net/docs
 
 ## Contributing
 
